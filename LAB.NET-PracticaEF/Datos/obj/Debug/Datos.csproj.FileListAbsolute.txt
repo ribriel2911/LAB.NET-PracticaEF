@@ -1,0 +1,14 @@
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\bin\Debug\Datos.dll.config
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\bin\Debug\Datos.dll
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\bin\Debug\Datos.pdb
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\bin\Debug\EntityFramework.dll
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\bin\Debug\EntityFramework.SqlServer.dll
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\bin\Debug\EntityFramework.xml
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\bin\Debug\EntityFramework.SqlServer.xml
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\bin\Debug\es\EntityFramework.resources.dll
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\bin\Debug\es\EntityFramework.SqlServer.resources.dll
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\obj\Debug\Datos.csproj.CopyComplete
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\obj\Debug\Datos.dll
+D:\Usuarios\Familia\Documents\GitHub\LAB.NET-PracticaEF\LAB.NET-PracticaEF\Datos\obj\Debug\Datos.pdb
