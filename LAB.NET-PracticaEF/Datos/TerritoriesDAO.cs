@@ -8,36 +8,35 @@ namespace Datos
 {
     public class TerritoriesDAO : DAO<Territories>
     {
+        NorthwindEntities contexto;
+
+        public TerritoriesDAO()
+        {
+            contexto = new NorthwindEntities();
+        }
+
         public void Create(Territories t)
         {
-            using (NorthwindEntities contexto = new NorthwindEntities())
-            {
                 Territories territory = t;
 
                 contexto.Territories.Add(territory);
 
                 contexto.SaveChanges();
-            }
         }
 
         public List<Territories> GetList()
         {
             List<Territories> regs = null;
 
-            using (NorthwindEntities contexto = new NorthwindEntities())
-            {
                 regs = contexto.Territories.ToList();
 
-                contexto.SaveChanges();
-            }
+                //contexto.SaveChanges();
 
             return regs;
         }
 
         public void Delete(Territories t)
         {
-            using (NorthwindEntities contexto = new NorthwindEntities())
-            {
                 Territories territory = t;
 
                 var query = contexto.Territories.Where(c => c.TerritoryID.Equals(territory.TerritoryID));
@@ -48,12 +47,36 @@ namespace Datos
                 }
 
                 contexto.SaveChanges();
-            }
         }
 
         public void Update(Territories t)
         {
-           
+                Territories territory = t;
+
+                var query = contexto.Territories.Where(c => c.TerritoryID.Equals(territory.TerritoryID));
+
+                foreach (var c in query)
+                {
+                    c.RegionID = t.RegionID;
+                    c.TerritoryDescription = territory.TerritoryDescription;
+                }
+
+                contexto.SaveChanges();
+        }
+
+        public void Attach(Territories t)
+        {
+                Territories territory = t;
+
+                var query = contexto.Territories.Max(c => c.TerritoryID)+1;
+
+                territory.TerritoryID = query;
+
+                contexto.Territories.Attach(territory);
+
+             //   contexto.Entry<Territories>(territory).State = System.Data.Entity.EntityState.Detached;
+
+               // contexto.SaveChanges();
         }
     }
 }

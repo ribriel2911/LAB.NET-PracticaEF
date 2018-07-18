@@ -69,7 +69,35 @@ namespace Datos
 
         public void Update(Region r)
         {
+            using (NorthwindEntities contexto = new NorthwindEntities())
+            {
+                Region region = r;
 
+                var query = contexto.Region.Where(c => c.RegionID==region.RegionID);
+
+                foreach (var c in query)
+                {
+                    c.RegionDescription = region.RegionDescription;
+                }
+
+                contexto.SaveChanges();
+            }
+        }
+
+        public void Attach(Region r)
+        {
+            using (NorthwindEntities contexto = new NorthwindEntities())
+            {
+                Region region = r;
+
+                var query = contexto.Region.Max(c => c.RegionID) + 1;
+
+                region.RegionID = query;
+
+                contexto.Region.Attach(region);
+
+                contexto.SaveChanges();
+            }
         }
     }
 }

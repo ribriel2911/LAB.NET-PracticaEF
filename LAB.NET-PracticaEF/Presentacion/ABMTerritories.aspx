@@ -23,6 +23,7 @@
                 </asp:DropDownList>
                 <asp:Button ID="btnNuevo" runat="server" Text="Nuevo" OnClick="btnNuevo_Click" class="btn btn-default" />
                 <asp:Button ID="btnModificar" runat="server" Text="Modificar" OnClick="btnModificar_Click" class="btn btn-info" />
+                <asp:Button ID="btnAttach" runat="server" Text="Modificar-Attach" OnClick="btnAttach_Click" class="btn btn-btninfo" />
                 <asp:Button ID="btnEliminar" runat="server" Text="Eliminar" OnClick="btnEliminar_Click" class="btn btn-danger" />
             </div>
             <asp:GridView ID="Grid1" runat="server" OnSelectedIndexChanged="Grid1_SelectedIndexChanged" class="table table-striped">

@@ -12,5 +12,6 @@ namespace Datos
         List<T> GetList();
         void Delete(T t);
         void Update(T t);
+        void Attach(T t);
     }
 }
